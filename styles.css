@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-color: #fcfeff;
+}
+
+.container{
+    margin: 50px auto ;
+    width: 1440px;
+}
+.left-content{
+    width: 50%;
+    margin-left: 100px;
+}
+.left-content .main-heading{
+    font-size: 45px;
+    width: 70%;
+    line-height: 45px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-style: bold;
+}
+.left-content .under-heading{
+    margin-top: 15px;
+    width: 60%;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+
+.row-1{
+    display: flex;
+    width: 90%;
+}
+
+.review{
+    display: flex;
+    border: 1px solid hsl(300, 24%, 96%);
+    border-radius: 7px;
+    padding: 15px 80px 15px 15px;
+    background-color: hsl(300, 24%, 96%);
+} 
+#review{
+    position: relative;
+    top: 25px;
+}
+#Guru{
+    position: relative;
+    left: 50px;
+    top: 50px;
+
+}
+#Tech{
+    position: relative;
+    left: 100px;
+    top: 75px;
+    
+}
+
+.review .review-p{
+    margin-left: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+    font-style: bold;
+}
+
+.review span {
+    margin-left: 5px;
+    color: orange;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 350px 350px 350px ;
+    gap: 70px;
+    margin: 100px;
+    
+    
+}
+
+.card-1{
+   display: grid;
+   background-color: hsl(300, 43%, 22%); 
+   border-radius: 7px;
+}
+
+.card-2{
+    display: grid; 
+    background-color: hsl(300, 43%, 22%); 
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+ }
+
+
+ .card-3{
+    display: grid; 
+    background-color: hsl(300, 43%, 22%); 
+    border-radius: 5px;
+    position: relative;
+    top: 40px;
+ }
+.content{
+    margin: 20px;
+}
+ .top-content{
+     display: flex;
+ }
+
+ .top-content img {
+     border-radius: 100px;
+     width: 50px;
+     height: 50px;
+     margin: 10px;
+ }
+ .contact-content h3 {
+     color: hsl(0, 0%, 100%);
+     margin: 20px 10px 3px 10px;
+     font-size: 13px;
+ }
+
+ .contact-content span {
+     color: hsl(333, 80%, 67%);
+     margin: 10px;
+     font-style: bold;
+     font-size: 14px;
+ }
+
+ .content-bottom{
+     margin: 20px 10px 20px 10px ;
+     
+ }
+
+ .content-bottom p {
+     color: hsl(0, 0%, 100%);
+     line-height: 140%;
+     font-size: 13px;
+
+ }
+ .credit{
+     text-align: center;
+ }
+
+ @media screen and (max-width:780px) {
+     body{
+         background-color: #fcfeff;
+     }
+     .container{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 80px auto;
+         width: 375px;
+        
+     }
+     .row-1{
+         display: flex;
+         flex-direction: column;
+     }
+     .left-content .main-heading{
+         position: relative;
+         right: 70px;
+         width: 160%;
+         
+     }
+     .left-content .under-heading{
+        position: relative;
+        right: 70px;
+         width: 300px;
+     }
+
+     .right-content{
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+         
+     }
+     
+     .cards{
+         display: flex;
+         flex-direction: column;
+     }
+     #Guru{
+        position: relative;
+        left: 0px;
+     }
+     #Tech{
+            
+            position: relative;
+            left: 0px;
+     }
+     .review{
+         display: flex;
+         flex-direction: column; 
+        text-align: center;
+        padding: 7px;
+        border-radius: 7px;
+     }
+     
+     .cards{
+         width: 300px;
+     }
+ }
